@@ -1,6 +1,7 @@
 # SETUP — diegimas žingsnis po žingsnio
 
 > Veikia Windows / macOS / Linux. Reikia: įdiegto **Claude Code** ir **Node.js** (`node`).
+> Dvi pusės: **Cowork** (atskira Claude aplinka — planuoja) + **Claude Code** (programuoja), bendras git repo. *(Neturi Cowork programos? Planuotoju gali būti antra **Claude Code** sesija.)*
 
 ## 1. Projektas (git repo)
 - Susikurk projekto aplanką **paprastame kelyje** (NE OneDrive/Dropbox viduje — debesis užrakina `.git`).
@@ -33,10 +34,11 @@ raktus: `hooks`, `permissions.defaultMode`, `skip*`). **Pakeisk kelią** prie `_
 nuorodą į `DARBO_PRINCIPAI.md`. Claude `CLAUDE.md` skaito automatiškai kiekvieną sesiją.
 Universalius principus gali įdėti ir į **globalų** `~/.claude/CLAUDE.md` → galios VISIEMS projektams.
 
-## 5. Paleisk DVI sesijas tame pačiame aplanke
-- 1 sesija = **„Code"** (kodą rašo/stato).
-- 2 sesija = **„Cowork"** (planuoja/projektuoja).
-- Abi atidarytos tame pačiame projekto aplanke.
+## 5. Dirbk iš dviejų pusių tame pačiame repo
+- **Cowork** (atskira Claude aplinka) — **planuoja/projektuoja**.
+- **Claude Code** — **programuoja/stato**.
+- Abi pusės dirba tame pačiame projekto repo (bendras „kambarys").
+- ⚠️ Cowork ir Claude Code = **SKIRTINGOS aplinkos**, ne dvi tos pačios programos sesijos. Auto-pašto hook'as (§3) įsijungia **Claude Code** pusėje; Cowork žinutes pasiima skaitydama repo failus. *(Neturi Cowork programos? Planuotoju gali būti ir antra **Claude Code** sesija — tada hook'as veikia abiejose.)*
 
 Kiekviena RAŠO savo siunčiamą paštą, SKAITO kito:
 - cowork → rašo `COWORK_TO_CODE.md`

@@ -1,7 +1,8 @@
 // _cowork_check.js — Claude Code "UserPromptSubmit" hook'as.
-// Tikslas: IR "Code", IR "Cowork" sesija VISADA mato vienas kito naujausią
-// žinutę — be jokio raginimo. Įdiegus GLOBALIAI (~/.claude/settings.json
-// "hooks") veikia VISOSE Claude Code sesijose šioje mašinoje.
+// Tikslas: ir KODUOTOJAS (Claude Code), ir PLANUOTOJAS (Cowork aplinka) per
+// bendrą repo mato vienas kito naujausią žinutę. Hook'as įsijungia CLAUDE CODE
+// pusėje (globalus ~/.claude/settings.json, "hooks"); Cowork žinutes pasiima
+// skaitydama repo failus. (Jei planuotojas irgi Claude Code — veikia abiejose.)
 //
 // SVARBU: du vienkrypčiai "paštai" turi gulėti ŠALIA šio skripto (tame
 // pačiame kataloge):
