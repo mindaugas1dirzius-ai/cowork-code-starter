@@ -1,0 +1,27 @@
+{
+  "_komentaras": "ŠITO failo turinį įkelk į GLOBALŲ ~/.claude/settings.json (Win: C:\\Users\\TU\\.claude\\settings.json; Mac/Linux: ~/.claude/settings.json). Pakeisk KELIĄ prie _cowork_check.js. Jei settings.json jau turi turinį — sujunk (pridėk tik trūkstamus raktus).",
+
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "allow": [
+      "Bash(git *)",
+      "Bash(git -C *)",
+      "Bash(node *)",
+      "Bash(npm run *)",
+      "Bash(npx *)"
+    ]
+  },
+
+  "skipAutoPermissionPrompt": true,
+  "skipDangerousModePermissionPrompt": true,
+
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node \"C:\\Users\\TU\\Projects\\PROJEKTAS\\_cowork_check.js\"" }
+        ]
+      }
+    ]
+  }
+}
