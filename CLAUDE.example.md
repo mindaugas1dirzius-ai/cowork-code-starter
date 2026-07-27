@@ -27,3 +27,27 @@ Vienas failas = vienas rašytojas (niekada abu kartu):
 - **Po pakeitimų privaloma:** … (pvz. lint/tsc 0; įrenginyje — pilnas perdiegimas)
 - **Tiesos šaltinis (ką skaityti pirma):** būklės failas → planas → paštai.
 - **Ko NELIESTI:** …
+
+## 🔍 Auditas ir sesijų perdavimas (pluginas `plano-kodo-auditas`)
+
+> Šis blokas įtrauktas į šabloną, kad KIEKVIENAS naujas projektas jį paveldėtų.
+> Pakeisk tik `<projektas>` į savo aplanko pavadinimą.
+
+**Auditas**
+- Cowork: `audituok planą`
+- Code: `audituok kodą`, po to `sinchronizacijos auditas`
+- ⚠️ **PRIVALOMA:** Code sesiją leisti su prijungtu pluginu —
+  `C:\Users\minda\Projects\auditas.cmd <projektas>`
+  Per paprastą `claude` audito skill'ai NEpasiekia savo taisyklių failo ir tyliai
+  dirba su sutrumpintomis taisyklėmis.
+- Prieš bet kurį leidimui skirtą build'ą — visi trys auditai; tęsti, kai nėra nė vieno 🔴.
+
+**Sesijų perdavimas — skill `sesijos-perdavimas`** (tame pačiame plugine, veikia abiejose pusėse)
+- Startas: auditas ar praleidžiam? → pilnas konteksto įsisavinimas → verifikacija →
+  VIENAS patobulinimo pasiūlymas → 2–4 maži žingsniai.
+- Pabaiga: kas padaryta · metodikos ir įrankiai · kas NEBAIGTA · kas NEPATIKRINTA ·
+  išsaugojimo patikra.
+
+**Darbo tvarka**
+- Vienas darbas vienu metu; nesusijusios idėjos parkuojamos į planą, ne pradedamos iš karto.
+- Naujų failų vaidmenims, kuriuos jau dengia esami, NEKURTI (viena tiesa — viena vieta).
